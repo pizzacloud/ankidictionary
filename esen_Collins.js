@@ -46,41 +46,36 @@ class enfr_Collins {
     renderCSS() {
         let css = `
             <style>
-                .copyright{
-                    display:none;
-                }
-                .orth {
-                    font-size: 100%;
-                    font-weight: bold;
-                }
-                .quote {
-                    font-style: normal;
-                    color: #1683be;
-                }
-                .colloc {
-                    font-style: italic;
-                    font-weight: normal;
-                }
-                .sense {
-                    /*border: 1px solid;*/
-                    /*border-color: #e5e6e9 #dfe0e4 #d0d1d5;*/
-                    border-radius: 3px;
-                    padding: 5px;
-                    margin: 5px 0;
-                    background-color: #f6f6f6;
-                }
-                .sense .re {
-                    font-size: 100%;
-                    margin-left: 0;
-                }
-                a {
-                    color: #000;
-                    text-decoration: none;
-                }
-                * {
-                    word-wrap: break-word;
-                    box-sizing: border-box;
-                }
+            .link { color: #1b85e5; }
+            .containerDesktop--2_5JC, .containerMobile--1sbY7 {
+                line-height: 24px;
+                font-family: -apple-system,system-ui,BlinkMacSystemFont,’Segoe UI’,Roboto,Ubuntu,’Helvetica Neue’,Arial,sans-serif;
+            }
+            .entry--3tNUi { margin-top: 3px; }
+            .posContainer--2xs-U { margin-top: 3px; }
+            .inline--CJsLA { display: inline; }
+            .indent--FyTYr { margin-left: 5px; }
+            .context--1vspK { color: #58b40b; }
+            .order--1TgBO { font-weight: 700; }
+            .neodictTranslation--C2TP2 {
+                color: #1b85e5;
+                text-decoration: none;
+                font-weight: 700;
+            }
+            .dash--SIa20 {
+                display: inline-block;
+                border-top-color: #a6a6a6;
+                border-top-style: solid;
+                border-top-width: 1px;
+                width: 13px;
+                height: 4px;
+                margin-left: 8px;
+                margin-right: 10px;
+            }
+            .exampleDesktop--3n1hN {
+                color: #7b7b7b;
+                font-style: normal;
+            }
             </style>`;
 
         return css;
