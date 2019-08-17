@@ -8,9 +8,9 @@ class enen_Collins {
 
     async displayName() {
         let locale = await api.locale();
-        if (locale.indexOf('CN') != -1) return 'ENES LINGUEE';
-        if (locale.indexOf('TW') != -1) return 'ENES LINGUEE';
-        return 'ENES LINGUEE';
+        if (locale.indexOf('CN') != -1) return 'LINGUEE西英';
+        if (locale.indexOf('TW') != -1) return 'LINGUEE西英';
+        return 'LINGUEE西英词典';
     }
 
 
