@@ -1,5 +1,5 @@
 /* global api */
-class enfr_Collins {
+class esen_Collins {
     constructor(options) {
         this.options = options;
         this.maxexample = 2;
