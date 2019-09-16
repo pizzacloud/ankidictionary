@@ -10,7 +10,7 @@ class enen_Collins {
         let locale = await api.locale();
         if (locale.indexOf('CN') != -1) return '柯林斯西英词典';
         if (locale.indexOf('TW') != -1) return '柯林斯西英词典';
-        return 'Collins English Dictionary';
+        return 'Collins Spanish English Dictionary';
     }
 
 
