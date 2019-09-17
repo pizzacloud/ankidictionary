@@ -37,10 +37,18 @@ class fren_Collins {
             return null;
         }
 
-        let content = doc.querySelector('.content') || '';
-        if (!content) return null;
+       let contents = doc.querySelectorAll('#dictionary-collins-es-en') || [];
+        if (contents.length == 0) return null;
+
+        let definition = '';
+        for (const content of contents) {
+            this.removeTags(content, '.bubble--3j0Ro');
+            this.removeTags(content, '.copyright--2TbNS');
+            this.removelinks(content);
+            definition += content.innerHTML;
+        }
         let css = this.renderCSS();
-        return css + content.innerHTML;
+        return definition ? css + definition : null;
     }
 
     renderCSS() {
