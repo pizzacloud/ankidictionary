@@ -44,40 +44,59 @@ class fren_Collins {
     }
 
     renderCSS() {
-        let css = `
+   let css = `
             <style>
-            .link { color: #1b85e5; }
-            .containerDesktop--2_5JC, .containerMobile--1sbY7 {
-                line-height: 24px;
-                font-family: -apple-system,system-ui,BlinkMacSystemFont,’Segoe UI’,Roboto,Ubuntu,’Helvetica Neue’,Arial,sans-serif;
-            }
-            .entry--3tNUi { margin-top: 3px; }
-            .posContainer--2xs-U { margin-top: 3px; }
-            .inline--CJsLA { display: inline; }
-            .indent--FyTYr { margin-left: 5px; }
-            .context--1vspK { color: #58b40b; }
-            .order--1TgBO { font-weight: 700; }
-            .neodictTranslation--C2TP2 {
-                color: #1b85e5;
-                text-decoration: none;
-                font-weight: 700;
-            }
-            .dash--SIa20 {
-                display: inline-block;
-                border-top-color: #a6a6a6;
-                border-top-style: solid;
-                border-top-width: 1px;
-                width: 13px;
-                height: 4px;
-                margin-left: 8px;
-                margin-right: 10px;
-            }
-            .exampleDesktop--3n1hN {
-                color: #7b7b7b;
-                font-style: normal;
-            }
+                span.band {color:#e52920;}
+                span.pos  {text-transform:lowercase; font-size:0.9em; margin-right:5px; padding:2px 4px; color:white; background-color:#0d47a1; border-radius:3px;}
+                span.tran {margin:0; padding:0;}
+                span.eng_tran {margin-right:3px; padding:0;}
+                span.chn_tran {color:#0d47a1;}
+                ul.sents {font-size:0.8em; list-style:square inside; margin:3px 0;padding:5px;background:rgba(13,71,161,0.1); border-radius:5px;}
+                li.sent  {margin:0; padding:0;}
+                span.eng_sent {margin-right:5px;}
+                span.chn_sent {color:#0d47a1;}
+                .copyright{
+                    display:none;
+                }
+                .orth {
+                    font-size: 100%;
+                    font-weight: bold;
+                }
+                .quote {
+                    font-style: normal;
+                    color: #1683be;
+                }
+                .colloc {
+                    font-style: italic;
+                    font-weight: normal;
+                }
+                .sense {
+                    border: 1px solid;
+                    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+                    border-radius: 3px;
+                    padding: 5px;
+                    margin-top: 3px;
+                }
+                .sense .re {
+                    font-size: 100%;
+                    margin-left: 0;
+                }
+                .sense .sense {
+                    border: initial;
+                    border-color: initial;
+                    border-radius: initial;
+                    padding: initial;
+                    margin-top: initial;
+                }
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
+                * {
+                    word-wrap: break-word;
+                    box-sizing: border-box;
+                }
             </style>`;
-
         return css;
     }
 }
