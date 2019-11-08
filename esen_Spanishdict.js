@@ -108,6 +108,9 @@ class esen_Spanishdict {
                 color: #7b7b7b;
                 font-style: normal;
             }
+            .tipContents--1TNZV {
+                display: none
+            }
             </style>`;
 
         return css;
